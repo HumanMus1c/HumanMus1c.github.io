@@ -217,14 +217,14 @@ body {
 .main {		/* 桌面 */
 	/* float: left; */
 
-	width: calc(100% - 0px);
+	width: 100%;
 	height: 800px;
 	border: 0 solid #D8E4EB;
 	
 }
 
 /*---------------------- 桌面格子---------------------- */
-.main .main-span:last-child{margin-right:0} {		
+.main .main-span {		
 	/* display: inline-block; */
 	float: left;
 	width: 160px;
