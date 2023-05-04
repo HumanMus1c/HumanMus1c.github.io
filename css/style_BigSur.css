@@ -34,8 +34,8 @@ body {
 	/* z-index: 1; */
 }
 
-/*---------------------- Finder菜单格子---------------------- */
-.div-finder  span {		/* Finder各菜单格子 */
+/*---------------------- Finder菜单列表---------------------- */
+.div-finder  span {		
 	display: block;
 	float: left;
 	height: 30px;
@@ -49,15 +49,18 @@ body {
 	transition: box-shadow 0.6s ease;
 }
 
-.div-finder  span:hover {				/* Finder菜单区域文字变换 */
+/*----------------------Finder菜单区域文字变换----------------------*/
+.div-finder span:hover {				
 	color: #d8e4eb;
 	cursor: pointer;
-	box-shadow: 0 6px 8px 4px rgba(255, 255, 255, 0.3);
+	box-shadow: 0 2px 3px 2px rgba(255, 255, 255, 0.1);
 	/* text-shadow: 0 0  4px #000000; */
 	/* border-bottom:0.5px solid rgba(255, 255, 255, 0.8); */
 }
 
-.div-finder .apple-logo {		/* 苹果LOGO  */
+
+/*----------------------苹果LOGO----------------------*/
+.div-finder .apple-logo {		
 	display: block;
 	float: left;
 	width: 30px;
@@ -74,7 +77,7 @@ body {
 
 /* -------------------------苹果LOGO下拉菜单样式 -----------------------*/
 .dropdown {
-	display: none;
+	display: inline;
 	float: left;
 	height: 0px;
     /* position: relative; */
@@ -82,12 +85,14 @@ body {
 	background-color: rgba(0, 170, 238, 0.3);
 	backdrop-filter: blur( 8px );
 	-webkit-backdrop-filter: blur( 6px );
-	animation: expand 0.2s linear 1;	/* 引用动画 */
-	transition: height 0.2s linear 1;	/* 属性过渡效果 */
+	animation: expand 0.1s linear 1;	/* 引用动画 */
+	transition: height 0.1s linear 1;	/* 属性过渡效果 */
 	/* z-index: 1; */
 	
-}	  
-	  @keyframes expand {		/* 展开动画 */
+}	 
+
+/* 展开动画 */
+	  @keyframes expand {		
 	    0% {
 			height: 0%;
 			}
