@@ -224,7 +224,7 @@ body {
 }
 
 /*---------------------- 桌面格子---------------------- */
-.main .main-span {		
+.main .main-span:last-child{margin-right:0} {		
 	/* display: inline-block; */
 	float: left;
 	width: 160px;
