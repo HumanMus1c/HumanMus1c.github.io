@@ -223,7 +223,8 @@ body {
 	
 }
 
-.main .main-span {		/* 桌面格子 */
+/*---------------------- 桌面格子---------------------- */
+.main .main-span:nth-child(even) {		
 	/* display: inline-block; */
 	float: left;
 	width: 160px;
@@ -235,7 +236,8 @@ body {
 	/* z-index: -1; */
 }
 
-.main .main-span:hover {		/* 桌面格子变换 */
+/*---------------------- 桌面格子变换效果---------------------- */
+.main .main-span:hover {		
 	border-radius: 15px;
 	background-color: rgba(85, 255, 255, 0.3);
 	cursor: pointer;
