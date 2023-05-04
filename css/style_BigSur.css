@@ -1,0 +1,401 @@
+/* ---------------------清除外边距 -------------------*/
+* {
+	margin: 0 0;	/* 清除外边距 */
+}
+
+*::-webkit-scrollbar { 	/*隐藏侧边滚动条 */
+	-ms-overflow-style: none;
+	width: 0 !important
+	}
+
+
+body {
+	overflow: hidden !important;
+	/* display: flex; */
+	
+	align-items: flex-end;
+	text-align: center;	/* 使dock水平居中 */
+	width: 100%;
+	background-image: url(../img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/* ---------------------顶部Finder样式 -------------------*/
+.div-finder {		/* Finder区域 */
+	float: left;
+	/* display: block; */		/* float会将元素的显示模式更改为行内块 ，所以可以不写*/
+	width: 100%;
+	height: 30px;
+	backdrop-filter: blur( 80px );
+	-webkit-backdrop-filter: blur( 80px );
+	box-shadow: 0 0 16px 0 rgba( 31, 38, 135, 0.37 );
+	/* z-index: 1; */
+}
+
+/*---------------------- Finder菜单格子---------------------- */
+.div-finder  span {		/* Finder各菜单格子 */
+	display: block;
+	float: left;
+	height: 30px;
+	font: normal 1000 16px system;/* 文字符合属性设置 */
+	line-height: 30px;/* 设置行高，是文字垂直居中 */
+	color: #484848;
+	margin: 0 0;
+	padding: 0 10px;
+	border: 0 solid #2f8f8f;
+	border-radius: 4px;
+	transition: box-shadow 0.6s ease;
+}
+
+.div-finder  span:hover {				/* Finder菜单区域文字变换 */
+	color: #d8e4eb;
+	cursor: pointer;
+	box-shadow: 0 6px 8px 4px rgba(255, 255, 255, 0.3);
+	/* text-shadow: 0 0  4px #000000; */
+	/* border-bottom:0.5px solid rgba(255, 255, 255, 0.8); */
+}
+
+.div-finder .apple-logo {		/* 苹果LOGO  */
+	display: block;
+	float: left;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/apple-logo-black.png);
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	background-position: center;
+	
+}
+.apple-logo:hover {
+	background-image: url(../img/apple-logo-white.png);
+}
+
+/* -------------------------苹果LOGO下拉菜单样式 -----------------------*/
+.dropdown {
+	display: none;
+	float: left;
+	height: 0px;
+    /* position: relative; */
+	cursor: pointer;
+	background-color: rgba(0, 170, 238, 0.3);
+	backdrop-filter: blur( 8px );
+	-webkit-backdrop-filter: blur( 6px );
+	animation: expand 0.2s linear 1;	/* 引用动画 */
+	transition: height 0.2s linear 1;	/* 属性过渡效果 */
+	/* z-index: 1; */
+	
+}	  
+	  @keyframes expand {		/* 展开动画 */
+	    0% {
+			height: 0%;
+			}
+		50% {
+			height: 50%;
+		}
+	    100% { 
+			height: 100%;
+			}
+	}
+	
+	
+	
+.dropdown-content {
+    /* display: none; */
+	float: left;
+    position: absolute;
+	overflow: auto;
+/* 	background-color: rgba(99, 192, 244, 0.3);
+	backdrop-filter: blur( 8px );
+	-webkit-backdrop-filter: blur( 4px ); */
+	box-shadow: 0 0 16px 0 rgba( 31, 38, 135, 0.3);
+    border-radius: 15px;
+	
+    /* z-index: 1; */
+}
+
+.dropdown-content li {
+    display: block;
+    text-decoration: none;
+	font-size: 14px;
+	color: #424242;
+	line-height: 20px;
+	margin: 0 0;
+    padding: 0 0;
+	
+	/* z-index: 1; */
+	transition: all 0.2s ease 0s;
+}
+
+.dropdown li:hover {
+	color: #ffffff;
+	text-shadow: 0 0 8px #000000;
+	animation: hover 0.2s ease 1;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+	
+	/* z-index: 1; */
+	}
+
+
+
+.show {
+	display:inline-block;
+	position: absolute;
+	float: left;
+	left: 0px;
+	top: 30px;
+	/* margin: 30px 0 0 0; */
+	padding: 5px;
+	height: auto;
+	background-color: rgba(119,204,252, 0.6);
+	backdrop-filter: blur( 800px );
+	-webkit-backdrop-filter: blur( 800px );
+	transition: height 2s linear 1;
+	/* z-index: 1; */
+
+}
+
+
+.div-finder .div-finder-right {		/* Finder右侧各菜单格子 */
+	/* display: inline-block; */	/* float更改显示模式位行内块，所以无需再设置 */
+	float: right;
+	height: 30px;
+	/* font: normal 1000 16px system; */
+	/* line-height: 30px; */
+	color: #e7e7e7;
+	margin: 0 0;
+	padding: 0 20px;
+	
+}
+.div-finder  .div-finder-right:hover {
+	text-shadow: 0 0 4px #000000;
+	cursor: pointer;
+	box-shadow: 0 0 0 0 transparent;
+}
+.div-finder #inputmethod {		/* 输入法 */
+	background-image: url(../img/字母.png);
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.div-finder #battery {		/* 电池 */
+	background-image: url(../img/电池.png);
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.div-finder #search {		/* 搜索 */
+	background-image: url(../img/search.png);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.div-finder #control {		/* 控制中心 */
+	background-image: url(../img/control-center.png);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+#search-bar {
+	position: absolute; 
+	left: 50%; 
+	transform: translateX(-50%)
+	
+	
+}
+
+/* -------------------------桌面样式 -----------------------*/
+.main {		/* 桌面 */
+	/* float: left; */
+
+	width: auto;
+	height: 800px;
+	border: 0 solid #D8E4EB;
+	
+}
+
+.main .main-span {		/* 桌面格子 */
+	/* display: inline-block; */
+	float: left;
+	width: 160px;
+	height: 160px;
+	background-image: url(../img/Folder128x128@2x.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+	/* z-index: -1; */
+}
+
+.main .main-span:hover {		/* 桌面格子变换 */
+	border-radius: 15px;
+	background-color: rgba(85, 255, 255, 0.3);
+	cursor: pointer;
+	backdrop-filter: blur( 8px );
+	-webkit-backdrop-filter: blur( 4px );
+	animation: Floder 0.5s ease-in 1 normal;	/* 引用颜色动画 */
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+	/* z-index: 0; */
+}	  
+	  @keyframes Floder { 	/* 文件夹颜色动画 */
+	    0% {
+			background-color: rgba(255, 255, 255, 0.1);
+			}
+	    100% {
+			background-color: rgba(255, 255, 255, 0.3);
+			}
+		
+	}
+	
+	/* 弹窗 */
+	.modal {
+	    display: none; /* 默认隐藏 */
+	    position: fixed; 
+	    z-index: 1; 
+	    left: 0;
+	    top: 0;
+	    width: 100%; 
+	    height: 100%; 
+	    overflow: auto; 
+	    background-color: rgb(0,0,0); 
+	    background-color: rgba(0,0,0,0.4); 
+	    -webkit-animation-name: fadeIn; 
+	    -webkit-animation-duration: 0.4s;
+	    animation-name: fadeIn;
+	    animation-duration: 0.4s
+	}
+	
+	/* 弹窗内容 */
+	.modal-content {
+	    position: fixed;
+	    bottom: 0;
+	    background-color: #fefefe;
+	    width: 100%;
+	    -webkit-animation-name: slideIn;
+	    -webkit-animation-duration: 0.4s;
+	    animation-name: slideIn;
+	    animation-duration: 0.4s
+	}
+	
+	/* 关闭按钮 */
+	.close {
+	    color: white;
+	    float: right;
+	    font-size: 28px;
+	    font-weight: bold;
+	}
+	
+	.close:hover,
+	.close:focus {
+	    color: #000;
+	    text-decoration: none;
+	    cursor: pointer;
+	}
+	
+	.modal-header {
+	    padding: 2px 16px;
+	    background-color: #5cb85c;
+	    color: white;
+	}
+	
+	.modal-body {padding: 2px 16px;}
+	
+	.modal-footer {
+	    padding: 2px 16px;
+	    background-color: #5cb85c;
+	    color: white;
+	}
+	
+	/* 添加动画 */
+	@-webkit-keyframes slideIn {
+	    from {bottom: -300px; opacity: 0} 
+	    to {bottom: 0; opacity: 1}
+	}
+	
+	@keyframes slideIn {
+	    from {bottom: -300px; opacity: 0}
+	    to {bottom: 0; opacity: 1}
+	}
+	
+	@-webkit-keyframes fadeIn {
+	    from {opacity: 0} 
+	    to {opacity: 1}
+	}
+	
+	@keyframes fadeIn {
+	    from {opacity: 0} 
+	    to {opacity: 1}
+	}
+
+/* -------------------------Dock样式 -----------------------*/
+.glass {	/* Dock背景 */
+	  /* flex: inherit; */
+	  display: inline-flex;	/* 使dock转换为行内元素 */
+	  justify-content: center;
+	  align-items: center;
+	  margin: 0 auto;
+	  /* width: auto; */
+	  height: 90px;
+	
+	  border-radius: 30px;
+	  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	  backdrop-filter: blur( 8px );
+	  -webkit-backdrop-filter: blur( 4px );
+	  border: 1px solid rgba( 255, 255, 255, 0.18 );
+	 
+}	  
+
+	
+.dock { /* Dock */
+	--scale: 1;	/* 重置缩放为1 */
+	
+	list-style: none;
+	/* margin: 0; */
+	padding: 0;
+	display: flex;
+	justify-content: center; /* 水平居中*/
+	align-items: center; 	/* 垂直居中*/
+	
+	
+}
+
+.dock li {		/* Dock里的内容 */
+	
+	/* display: inline-block; */
+	/* float: left; */
+	/* text-align: center;
+	line-height: inherit; */
+	font-size: calc(60px * var(--scale));
+	list-style: none;
+	margin: 0;
+	padding: 10px 0;
+	/* width: 120px;
+	height:  80px; */
+	cursor: default;
+	position: relative;
+	top: calc((80px * var(--scale) - 80px) / 2 * -1);
+	transition: all 0.2s ease-out 0s;
+
+	
+}
+
+
+.dock li.loading {		/* Dock图标点击动画 */
+  animation: 1s loading ease 3;
+  
+}
+
+@keyframes loading {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-40px);
+  }
+}
+
+
