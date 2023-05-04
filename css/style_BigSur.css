@@ -126,7 +126,7 @@ body {
 	font-size: 14px;
 	color: #424242;
 	line-height: 20px;
-	margin: 0 0;
+	margin: 3px 0;
     padding: 0 0;
 	
 	/* z-index: 1; */
@@ -136,9 +136,9 @@ body {
 .dropdown li:hover {
 	color: #ffffff;
 	text-shadow: 0 0 8px #000000;
-	animation: hover 0.2s ease 1;
+	/*animation: hover 0.2s ease 1;
 	animation-fill-mode: forwards;
-	animation-play-state: running;
+	animation-play-state: running;*/
 	
 	/* z-index: 1; */
 	}
@@ -217,7 +217,7 @@ body {
 .main {		/* 桌面 */
 	/* float: left; */
 
-	width: auto;
+	width: calc(100% - 0px);
 	height: 800px;
 	border: 0 solid #D8E4EB;
 	
