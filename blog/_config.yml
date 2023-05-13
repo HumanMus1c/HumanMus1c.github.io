@@ -8,7 +8,11 @@
 # Theme Core Configuration Settings
 # See: https://theme-next.js.org/docs/theme-settings/
 # ---------------------------------------------------------------
-
+deploy:
+  type: git
+  repo: https://github.com/<HumanMus1c>/<https://github.com/HumanMus1c/HumanMus1c.github.io.git>
+  # example, https://github.com/hexojs/hexojs.github.io
+  branch: gh-pages
 # Allow to cache content generation.
 cache:
   enable: true
