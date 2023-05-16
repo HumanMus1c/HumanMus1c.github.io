@@ -1,4 +1,4 @@
 {
-  "extends": "hexo",
+  "extends": "@next-theme",
   "root": true
 }
