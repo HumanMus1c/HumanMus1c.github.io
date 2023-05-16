@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
+title: HumanMusic
+subtitle: '人类音乐'
 description: ''
 keywords:
-author: John Doe
+author: Human
 language: en
 timezone: ''
 
@@ -102,4 +102,5 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git'
+  resipository: git@github.com:HumanMus1c/HumanMus1c.github.io.git
