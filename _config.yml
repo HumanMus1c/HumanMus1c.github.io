@@ -12,7 +12,7 @@ deploy:
   type: git
   repo: https://github.com/HumanMus1c/HumanMus1c.github.io.git
   # example, https://github.com/hexojs/hexojs.github.io
-  branch: main
+  branch: master
 # Allow to cache content generation.
 cache:
   enable: true
