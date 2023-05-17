@@ -104,4 +104,4 @@ theme: next
 deploy:
   type: git
   repo: https://github.com/HumanMus1c/HumanMus1c.github.io.git
-  branch: master
+  branch: main
