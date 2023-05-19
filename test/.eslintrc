@@ -1,0 +1,6 @@
+{
+  "extends": "HumanMus1c.github.io/test",
+  "globals": {
+    "should": true
+  }
+}
