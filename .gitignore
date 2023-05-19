@@ -8,4 +8,7 @@ package-lock.json
 node_modules/
 .nyc_output/
 coverage/
+<<<<<<< HEAD
 public/
+=======
+>>>>>>> parent of c80fd366 (structure change)

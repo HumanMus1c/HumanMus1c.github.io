@@ -40,7 +40,11 @@
     "hexo-renderer-marked": "6.0.0",
     "js-yaml": "4.1.0",
     "mocha": "10.2.0",
+<<<<<<< HEAD
     "stylelint": "15.6.2",
+=======
+    "stylelint": "14.16.1",
+>>>>>>> parent of c80fd366 (structure change)
     "stylelint-stylus": "0.18.0"
   },
   "dependencies": {
