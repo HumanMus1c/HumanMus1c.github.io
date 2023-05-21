@@ -3,7 +3,7 @@
 # #生成 ssh 密钥并绑定到GitHub
 
 ```bash
-**ssh-keygen -t rsa -C "[1714076628@qq.com](mailto:1714076628@qq.com)"**
+**ssh-keygen -t rsa -C "[1714076628@qq.com]"**
 ```
 
 # #测试密钥是否绑定成功
@@ -16,7 +16,7 @@
 
 ```bash
 **git config --global [user.name](http://user.name/) "HumanMus1c"
-git config --global user.email "[1714076628@qq.com](mailto:1714076628@qq.com)"**
+git config --global user.email "[1714076628@qq.com]"**
 ```
 
 [git@github.com](mailto:git@github.com):HumanMus1c/HumanMus1c.github.io.git
