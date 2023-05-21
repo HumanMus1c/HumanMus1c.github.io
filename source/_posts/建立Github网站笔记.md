@@ -1,5 +1,5 @@
-# 建立Github网站笔记
-网站笔记
+# 搭建Github网站笔记
+建站笔记
 # #生成 ssh 密钥并绑定到GitHub
 
 ```bash
@@ -9,13 +9,13 @@
 # #测试密钥是否绑定成功
 
 ```bash
-**ssh -T [git@github.com](mailto:git@github.com)**
+**ssh -T [git@github.com]**
 ```
 
 # #设置全局用户
 
 ```bash
-**git config --global [user.name](http://user.name/) "HumanMus1c"
+**git config --global [user.name] "HumanMus1c"
 git config --global user.email "[1714076628@qq.com]"**
 ```
 
