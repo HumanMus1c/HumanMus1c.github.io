@@ -101,9 +101,9 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
-scheme: Muse
+#scheme: Muse
+scheme: Pisces
 #scheme: Mist
-#scheme: Pisces
 #scheme: Gemini
 
 
