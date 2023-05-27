@@ -101,7 +101,6 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
-#themes/-next/_-config.yml
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
