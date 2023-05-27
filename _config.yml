@@ -101,6 +101,9 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+#_config.next.yml
+
+#theme/next/_config.yml
 
 
 # Deployment
