@@ -103,7 +103,7 @@ ignore:
 theme: next
 #_config.next.yml
 
-#theme/next/_config.yml
+#theme/hexo-theme-next/_config.yml
 
 
 # Deployment
