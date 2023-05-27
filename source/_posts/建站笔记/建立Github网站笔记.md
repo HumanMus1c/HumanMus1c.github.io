@@ -1,3 +1,7 @@
+---
+title: Github网站笔记
+---
+
 # 搭建Github网站笔记
 建站笔记
 # #生成 ssh 密钥并绑定到GitHub
