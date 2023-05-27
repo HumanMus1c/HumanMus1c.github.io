@@ -5,7 +5,7 @@
 # Site
 title: HumanMusic
 subtitle: '人类之音'
-description: '记录地球生活'
+description: '记录一下'
 keywords:
 author: Human
 language: zh-CN
@@ -106,7 +106,9 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: git@github.com:HumanMus1c/HumanMus1c.github.io.git
+  branch: gh-pages
 
 
 # ---------------------------------------------------------------
@@ -365,7 +367,7 @@ symbols_count_time:
   item_text_total: false
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Donate (Sponsor) settings
 # Front-matter variable (nonsupport animation).
