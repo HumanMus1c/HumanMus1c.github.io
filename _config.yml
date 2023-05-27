@@ -105,11 +105,6 @@ theme: next
 
 #theme/hexo-theme-next/_config.yml
 
-# ---------------------------------------------------------------
-# Theme Core Configuration Settings
-# See: https://theme-next.js.org/docs/theme-settings/
-# ---------------------------------------------------------------
-
 # Allow to cache content generation.
 cache:
   enable: true
