@@ -101,9 +101,7 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
-#_config.next.yml
-
-#theme/hexo-theme-next/_config.yml
+#themes/hexo-theme-next/_config.yml
 
 # Allow to cache content generation.
 cache:
