@@ -37,10 +37,10 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Muse #隐藏侧边，内容左侧靠齐
+scheme: Muse #隐藏侧边，内容左侧靠齐
 #scheme: Mist #隐藏侧边，内容左侧靠齐
 #scheme: Pisces #侧边常驻
-scheme: Gemini
+#scheme: Gemini
 
 # Dark Mode
 darkmode: false
