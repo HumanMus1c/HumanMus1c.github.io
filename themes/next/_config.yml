@@ -141,7 +141,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: /images/Logo.png
   # If true, the avatar will be displayed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
@@ -155,7 +155,7 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || fab fa-github
+  GitHub: https://github.com/HumanMus1c || fab fa-github
   #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -167,8 +167,8 @@ social:
 
 social_icons:
   enable: true
-  icons_only: false
-  transition: false
+  icons_only: true
+  transition: true
 
 # Blog rolls
 links_settings:
@@ -186,7 +186,7 @@ toc:
   # Automatically add list number to toc.
   number: true
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: false
   # Maximum heading depth of generated toc.
