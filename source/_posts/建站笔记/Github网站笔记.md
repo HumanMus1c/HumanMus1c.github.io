@@ -5,24 +5,6 @@ tags:
   - 网站
 ---
 
-### Here are some common emojis that can be used in Markdown with their corresponding icons:
-
-- **:smile: - 😄**
-- **:thumbsup: - 👍**
-- **:thumbsdown: - 👎**
-- **:star: - ⭐**
-- **:fire: - 🔥**
-- **:heart: - ❤️**
-- **:warning: - ⚠️**
-- **:exclamation: - ❗**
-- **:question: - ❓**
-- **:rocket: - 🚀**
-- **:tada: - 🎉**
-- **:bulb: - 💡**
-- **:memo: - 📝**
-- **:mag: - 🔍**
-- **:eyes: - 👀**
-
 # #🔑生成 ssh 密钥并绑定到GitHub
 
 ```bash
