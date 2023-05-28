@@ -1,5 +1,8 @@
 ---
 title: 🎉Github网站笔记🎉
+tags:
+  - 笔记
+  - 网站
 ---
 
 ### Here are some common emojis that can be used in Markdown with their corresponding icons:
