@@ -70,9 +70,9 @@ theme: next
 > theme配置信息next要和根目录下themes文件夹中放置的子主题文件夹名一致，才会读取主题文件以及配置信息。
 > 
 
-![Untitled](/Untitled.png)
+![Untitled](/images/Untitled.png)
 
-![Untitled](/Untitled1.png)
+![Untitled](/images/Untitled1.png)
 
 # #🚀配置部署信息
 
@@ -82,13 +82,13 @@ theme: next
 
 1.将默认分支改为:main🔧
 
-![github仓库设置修改：](../images/Untitled2.png)
+![github仓库设置修改：](/images/Untitled2.png)
 
 github仓库设置修改：
 
 2.github-settings-pages修改🔧
 
-![Untitled](Untitled3.png)
+![Untitled](/imagesUntitled3.png)
 
 ## #根目录 _config文件设置github部署配置信息
 
