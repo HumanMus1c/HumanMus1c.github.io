@@ -82,7 +82,7 @@ theme: next
 
 1.将默认分支改为:main🔧
 
-![github仓库设置修改：](%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%202.png)
+![github仓库设置修改：](..\/Untitled%202.png)
 
 github仓库设置修改：
 
