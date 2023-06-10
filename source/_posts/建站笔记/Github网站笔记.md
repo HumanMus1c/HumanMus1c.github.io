@@ -70,9 +70,9 @@ theme: next
 > theme配置信息next要和根目录下themes文件夹中放置的子主题文件夹名一致，才会读取主题文件以及配置信息。
 > 
 
-![Untitled](/images/Untitled.png)
+![Untitled](%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%20.png)
 
-![Untitled](/images/Untitled1.png)
+![Untitled](%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%201.png)
 
 # #🚀配置部署信息
 
@@ -82,7 +82,11 @@ theme: next
 
 1.将默认分支改为:main🔧
 
-![github仓库设置修改：](/images/Untitled2.png)
+<<<<<<< HEAD
+![github仓库设置修改：](%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%202.png)
+=======
+![github仓库设置修改：](%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%202.png)
+>>>>>>> parent of af4b48c (change logo)
 
 github仓库设置修改：
 
