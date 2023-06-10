@@ -1,0 +1,960 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>🎉Github网站笔记🎉</title>
+		<style>
+	</head>
+
+			/* cspell:disable-file */
+			/* webkit printing magic: print all background colors */
+			html {
+				-webkit-print-color-adjust: exact;
+			}
+
+			* {
+				box-sizing: border-box;
+				-webkit-print-color-adjust: exact;
+			}
+
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			@media only screen {
+				body {
+					margin: 2em auto;
+					max-width: 900px;
+					color: rgb(55, 53, 47);
+				}
+			}
+
+			body {
+				line-height: 1.5;
+				white-space: pre-wrap;
+			}
+
+			a,
+			a.visited {
+				color: inherit;
+				text-decoration: underline;
+			}
+
+			.pdf-relative-link-path {
+				font-size: 80%;
+				color: #444;
+			}
+
+			h1,
+			h2,
+			h3 {
+				letter-spacing: -0.01em;
+				line-height: 1.2;
+				font-weight: 600;
+				margin-bottom: 0;
+			}
+
+			.page-title {
+				font-size: 2.5rem;
+				font-weight: 700;
+				margin-top: 0;
+				margin-bottom: 0.75em;
+			}
+
+			h1 {
+				font-size: 1.875rem;
+				margin-top: 1.875rem;
+			}
+
+			h2 {
+				font-size: 1.5rem;
+				margin-top: 1.5rem;
+			}
+
+			h3 {
+				font-size: 1.25rem;
+				margin-top: 1.25rem;
+			}
+
+			.source {
+				border: 1px solid #ddd;
+				border-radius: 3px;
+				padding: 1.5em;
+				word-break: break-all;
+			}
+
+			.callout {
+				border-radius: 3px;
+				padding: 1rem;
+			}
+
+			figure {
+				margin: 1.25em 0;
+				page-break-inside: avoid;
+			}
+
+			figcaption {
+				opacity: 0.5;
+				font-size: 85%;
+				margin-top: 0.5em;
+			}
+
+			mark {
+				background-color: transparent;
+			}
+
+			.indented {
+				padding-left: 1.5em;
+			}
+
+			hr {
+				background: transparent;
+				display: block;
+				width: 100%;
+				height: 1px;
+				visibility: visible;
+				border: none;
+				border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+			}
+
+			img {
+				max-width: 100%;
+			}
+
+			@media only print {
+				img {
+					max-height: 100vh;
+					object-fit: contain;
+				}
+			}
+
+			@page {
+				margin: 1in;
+			}
+
+			.collection-content {
+				font-size: 0.875rem;
+			}
+
+			.column-list {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.column {
+				padding: 0 1em;
+			}
+
+			.column:first-child {
+				padding-left: 0;
+			}
+
+			.column:last-child {
+				padding-right: 0;
+			}
+
+			.table_of_contents-item {
+				display: block;
+				font-size: 0.875rem;
+				line-height: 1.3;
+				padding: 0.125rem;
+			}
+
+			.table_of_contents-indent-1 {
+				margin-left: 1.5rem;
+			}
+
+			.table_of_contents-indent-2 {
+				margin-left: 3rem;
+			}
+
+			.table_of_contents-indent-3 {
+				margin-left: 4.5rem;
+			}
+
+			.table_of_contents-link {
+				text-decoration: none;
+				opacity: 0.7;
+				border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+			}
+
+			table,
+			th,
+			td {
+				border: 1px solid rgba(55, 53, 47, 0.09);
+				border-collapse: collapse;
+			}
+
+			table {
+				border-left: none;
+				border-right: none;
+			}
+
+			th,
+			td {
+				font-weight: normal;
+				padding: 0.25em 0.5em;
+				line-height: 1.5;
+				min-height: 1.5em;
+				text-align: left;
+			}
+
+			th {
+				color: rgba(55, 53, 47, 0.6);
+			}
+
+			ol,
+			ul {
+				margin: 0;
+				margin-block-start: 0.6em;
+				margin-block-end: 0.6em;
+			}
+
+			li>ol:first-child,
+			li>ul:first-child {
+				margin-block-start: 0.6em;
+			}
+
+			ul>li {
+				list-style: disc;
+			}
+
+			ul.to-do-list {
+				padding-inline-start: 0;
+			}
+
+			ul.to-do-list>li {
+				list-style: none;
+			}
+
+			.to-do-children-checked {
+				text-decoration: line-through;
+				opacity: 0.375;
+			}
+
+			ul.toggle>li {
+				list-style: none;
+			}
+
+			ul {
+				padding-inline-start: 1.7em;
+			}
+
+			ul>li {
+				padding-left: 0.1em;
+			}
+
+			ol {
+				padding-inline-start: 1.6em;
+			}
+
+			ol>li {
+				padding-left: 0.2em;
+			}
+
+			.mono ol {
+				padding-inline-start: 2em;
+			}
+
+			.mono ol>li {
+				text-indent: -0.4em;
+			}
+
+			.toggle {
+				padding-inline-start: 0em;
+				list-style-type: none;
+			}
+
+			/* Indent toggle children */
+			.toggle>li>details {
+				padding-left: 1.7em;
+			}
+
+			.toggle>li>details>summary {
+				margin-left: -1.1em;
+			}
+
+			.selected-value {
+				display: inline-block;
+				padding: 0 0.5em;
+				background: rgba(206, 205, 202, 0.5);
+				border-radius: 3px;
+				margin-right: 0.5em;
+				margin-top: 0.3em;
+				margin-bottom: 0.3em;
+				white-space: nowrap;
+			}
+
+			.collection-title {
+				display: inline-block;
+				margin-right: 1em;
+			}
+
+			.page-description {
+				margin-bottom: 2em;
+			}
+
+			.simple-table {
+				margin-top: 1em;
+				font-size: 0.875rem;
+				empty-cells: show;
+			}
+
+			.simple-table td {
+				height: 29px;
+				min-width: 120px;
+			}
+
+			.simple-table th {
+				height: 29px;
+				min-width: 120px;
+			}
+
+			.simple-table-header-color {
+				background: rgb(247, 246, 243);
+				color: black;
+			}
+
+			.simple-table-header {
+				font-weight: 500;
+			}
+
+			time {
+				opacity: 0.5;
+			}
+
+			.icon {
+				display: inline-block;
+				max-width: 1.2em;
+				max-height: 1.2em;
+				text-decoration: none;
+				vertical-align: text-bottom;
+				margin-right: 0.5em;
+			}
+
+			img.icon {
+				border-radius: 3px;
+			}
+
+			.user-icon {
+				width: 1.5em;
+				height: 1.5em;
+				border-radius: 100%;
+				margin-right: 0.5rem;
+			}
+
+			.user-icon-inner {
+				font-size: 0.8em;
+			}
+
+			.text-icon {
+				border: 1px solid #000;
+				text-align: center;
+			}
+
+			.page-cover-image {
+				display: block;
+				object-fit: cover;
+				width: 100%;
+				max-height: 30vh;
+			}
+
+			.page-header-icon {
+				font-size: 3rem;
+				margin-bottom: 1rem;
+			}
+
+			.page-header-icon-with-cover {
+				margin-top: -0.72em;
+				margin-left: 0.07em;
+			}
+
+			.page-header-icon img {
+				border-radius: 3px;
+			}
+
+			.link-to-page {
+				margin: 1em 0;
+				padding: 0;
+				border: none;
+				font-weight: 500;
+			}
+
+			p>.user {
+				opacity: 0.5;
+			}
+
+			td>.user,
+			td>time {
+				white-space: nowrap;
+			}
+
+			input[type="checkbox"] {
+				transform: scale(1.5);
+				margin-right: 0.6em;
+				vertical-align: middle;
+			}
+
+			p {
+				margin-top: 0.5em;
+				margin-bottom: 0.5em;
+			}
+
+			.image {
+				border: none;
+				margin: 1.5em 0;
+				padding: 0;
+				border-radius: 0;
+				text-align: center;
+			}
+
+			.code,
+			code {
+				background: rgba(135, 131, 120, 0.15);
+				border-radius: 3px;
+				padding: 0.2em 0.4em;
+				border-radius: 3px;
+				font-size: 85%;
+				tab-size: 2;
+			}
+
+			code {
+				color: #eb5757;
+			}
+
+			.code {
+				padding: 1.5em 1em;
+			}
+
+			.code-wrap {
+				white-space: pre-wrap;
+				word-break: break-all;
+			}
+
+			.code>code {
+				background: none;
+				padding: 0;
+				font-size: 100%;
+				color: inherit;
+			}
+
+			blockquote {
+				font-size: 1.25em;
+				margin: 1em 0;
+				padding-left: 1em;
+				border-left: 3px solid rgb(55, 53, 47);
+			}
+
+			.bookmark {
+				text-decoration: none;
+				max-height: 8em;
+				padding: 0;
+				display: flex;
+				width: 100%;
+				align-items: stretch;
+			}
+
+			.bookmark-title {
+				font-size: 0.85em;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				height: 1.75em;
+				white-space: nowrap;
+			}
+
+			.bookmark-text {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.bookmark-info {
+				flex: 4 1 180px;
+				padding: 12px 14px 14px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+
+			.bookmark-image {
+				width: 33%;
+				flex: 1 1 180px;
+				display: block;
+				position: relative;
+				object-fit: cover;
+				border-radius: 1px;
+			}
+
+			.bookmark-description {
+				color: rgba(55, 53, 47, 0.6);
+				font-size: 0.75em;
+				overflow: hidden;
+				max-height: 4.5em;
+				word-break: break-word;
+			}
+
+			.bookmark-href {
+				font-size: 0.75em;
+				margin-top: 0.25em;
+			}
+
+			.sans {
+				font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+			}
+
+			.code {
+				font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
+			}
+
+			.serif {
+				font-family: Lyon-Text, Georgia, ui-serif, serif;
+			}
+
+			.mono {
+				font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+			}
+
+			.pdf .sans {
+				font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP';
+			}
+
+			.pdf:lang(zh-CN) .sans {
+				font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC';
+			}
+
+			.pdf:lang(zh-TW) .sans {
+				font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC';
+			}
+
+			.pdf:lang(ko-KR) .sans {
+				font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR';
+			}
+
+			.pdf .code {
+				font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP';
+			}
+
+			.pdf:lang(zh-CN) .code {
+				font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC';
+			}
+
+			.pdf:lang(zh-TW) .code {
+				font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC';
+			}
+
+			.pdf:lang(ko-KR) .code {
+				font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR';
+			}
+
+			.pdf .serif {
+				font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP';
+			}
+
+			.pdf:lang(zh-CN) .serif {
+				font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC';
+			}
+
+			.pdf:lang(zh-TW) .serif {
+				font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC';
+			}
+
+			.pdf:lang(ko-KR) .serif {
+				font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR';
+			}
+
+			.pdf .mono {
+				font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP';
+			}
+
+			.pdf:lang(zh-CN) .mono {
+				font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC';
+			}
+
+			.pdf:lang(zh-TW) .mono {
+				font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC';
+			}
+
+			.pdf:lang(ko-KR) .mono {
+				font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR';
+			}
+
+			.highlight-default {
+				color: rgba(55, 53, 47, 1);
+			}
+
+			.highlight-gray {
+				color: rgba(120, 119, 116, 1);
+				fill: rgba(120, 119, 116, 1);
+			}
+
+			.highlight-brown {
+				color: rgba(159, 107, 83, 1);
+				fill: rgba(159, 107, 83, 1);
+			}
+
+			.highlight-orange {
+				color: rgba(217, 115, 13, 1);
+				fill: rgba(217, 115, 13, 1);
+			}
+
+			.highlight-yellow {
+				color: rgba(203, 145, 47, 1);
+				fill: rgba(203, 145, 47, 1);
+			}
+
+			.highlight-teal {
+				color: rgba(68, 131, 97, 1);
+				fill: rgba(68, 131, 97, 1);
+			}
+
+			.highlight-blue {
+				color: rgba(51, 126, 169, 1);
+				fill: rgba(51, 126, 169, 1);
+			}
+
+			.highlight-purple {
+				color: rgba(144, 101, 176, 1);
+				fill: rgba(144, 101, 176, 1);
+			}
+
+			.highlight-pink {
+				color: rgba(193, 76, 138, 1);
+				fill: rgba(193, 76, 138, 1);
+			}
+
+			.highlight-red {
+				color: rgba(212, 76, 71, 1);
+				fill: rgba(212, 76, 71, 1);
+			}
+
+			.highlight-gray_background {
+				background: rgba(241, 241, 239, 1);
+			}
+
+			.highlight-brown_background {
+				background: rgba(244, 238, 238, 1);
+			}
+
+			.highlight-orange_background {
+				background: rgba(251, 236, 221, 1);
+			}
+
+			.highlight-yellow_background {
+				background: rgba(251, 243, 219, 1);
+			}
+
+			.highlight-teal_background {
+				background: rgba(237, 243, 236, 1);
+			}
+
+			.highlight-blue_background {
+				background: rgba(231, 243, 248, 1);
+			}
+
+			.highlight-purple_background {
+				background: rgba(244, 240, 247, 0.8);
+			}
+
+			.highlight-pink_background {
+				background: rgba(249, 238, 243, 0.8);
+			}
+
+			.highlight-red_background {
+				background: rgba(253, 235, 236, 1);
+			}
+
+			.block-color-default {
+				color: inherit;
+				fill: inherit;
+			}
+
+			.block-color-gray {
+				color: rgba(120, 119, 116, 1);
+				fill: rgba(120, 119, 116, 1);
+			}
+
+			.block-color-brown {
+				color: rgba(159, 107, 83, 1);
+				fill: rgba(159, 107, 83, 1);
+			}
+
+			.block-color-orange {
+				color: rgba(217, 115, 13, 1);
+				fill: rgba(217, 115, 13, 1);
+			}
+
+			.block-color-yellow {
+				color: rgba(203, 145, 47, 1);
+				fill: rgba(203, 145, 47, 1);
+			}
+
+			.block-color-teal {
+				color: rgba(68, 131, 97, 1);
+				fill: rgba(68, 131, 97, 1);
+			}
+
+			.block-color-blue {
+				color: rgba(51, 126, 169, 1);
+				fill: rgba(51, 126, 169, 1);
+			}
+
+			.block-color-purple {
+				color: rgba(144, 101, 176, 1);
+				fill: rgba(144, 101, 176, 1);
+			}
+
+			.block-color-pink {
+				color: rgba(193, 76, 138, 1);
+				fill: rgba(193, 76, 138, 1);
+			}
+
+			.block-color-red {
+				color: rgba(212, 76, 71, 1);
+				fill: rgba(212, 76, 71, 1);
+			}
+
+			.block-color-gray_background {
+				background: rgba(241, 241, 239, 1);
+			}
+
+			.block-color-brown_background {
+				background: rgba(244, 238, 238, 1);
+			}
+
+			.block-color-orange_background {
+				background: rgba(251, 236, 221, 1);
+			}
+
+			.block-color-yellow_background {
+				background: rgba(251, 243, 219, 1);
+			}
+
+			.block-color-teal_background {
+				background: rgba(237, 243, 236, 1);
+			}
+
+			.block-color-blue_background {
+				background: rgba(231, 243, 248, 1);
+			}
+
+			.block-color-purple_background {
+				background: rgba(244, 240, 247, 0.8);
+			}
+
+			.block-color-pink_background {
+				background: rgba(249, 238, 243, 0.8);
+			}
+
+			.block-color-red_background {
+				background: rgba(253, 235, 236, 1);
+			}
+
+			.select-value-color-pink {
+				background-color: rgba(245, 224, 233, 1);
+			}
+
+			.select-value-color-purple {
+				background-color: rgba(232, 222, 238, 1);
+			}
+
+			.select-value-color-green {
+				background-color: rgba(219, 237, 219, 1);
+			}
+
+			.select-value-color-gray {
+				background-color: rgba(227, 226, 224, 1);
+			}
+
+			.select-value-color-translucentGray {
+				background-color: rgba(255, 255, 255, 0.0375);
+			}
+
+			.select-value-color-orange {
+				background-color: rgba(250, 222, 201, 1);
+			}
+
+			.select-value-color-brown {
+				background-color: rgba(238, 224, 218, 1);
+			}
+
+			.select-value-color-red {
+				background-color: rgba(255, 226, 221, 1);
+			}
+
+			.select-value-color-yellow {
+				background-color: rgba(253, 236, 200, 1);
+			}
+
+			.select-value-color-blue {
+				background-color: rgba(211, 229, 239, 1);
+			}
+
+			.checkbox {
+				display: inline-flex;
+				vertical-align: text-bottom;
+				width: 16;
+				height: 16;
+				background-size: 16px;
+				margin-left: 2px;
+				margin-right: 5px;
+			}
+
+			.checkbox-on {
+				background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+			}
+
+			.checkbox-off {
+				background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+			}
+		</style>
+	</head>
+	<body>
+		<article id="9952ffba-57d5-4508-8f7c-dc3da240431a" class="page sans">
+			<header><img class="page-cover-image"
+					src="https://images.unsplash.com/photo-1586522471807-9eb85417199f?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb"
+					style="object-position:center 50%" />
+				<div class="page-header-icon page-header-icon-with-cover"><img class="icon"
+						src="%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/hexo-512x512.svg" />
+				</div>
+				<h1 class="page-title">🎉Github网站笔记🎉</h1>
+				<p class="page-description"></p>
+			</header>
+			<div class="page-body">
+				<details open="">
+					<summary style="font-weight:600;font-size:1.25em;line-height:1.3">Here are some common emojis that
+						can be used in Markdown with their corresponding icons:</summary>
+					<div class="indented">
+						<ul id="198fd518-5b8e-4c98-8cc4-05c3a1f47a6a" class="bulleted-list">
+							<li style="list-style-type:disc"><strong>:smile: - 😄</strong></li>
+						</ul>
+						<ul id="1b7292ec-5550-4265-a26a-8f2d30bec5fe" class="bulleted-list">
+							<li style="list-style-type:disc"><strong>:thumbsup: - 👍</strong></li>
+						</ul>
+						<ul id="b249fb11-e72f-4a0e-89d5-e9041b7e9aab" class="bulleted-list">
+							<li style="list-style-type:disc"><strong>:thumbsdown: - 👎</strong></li>
+						</ul>
+						<ul id="f82db081-23e5-4255-b4fa-52f7f4278f51" class="bulleted-list">
+							<li style="list-style-type:disc"><strong>:star: - ⭐</strong></li>
+						</ul>
+						<ul id="ba801fa0-2f27-4da7-b804-cc53a4614e90" class="bulleted-list">
+							<li style="list-style-type:disc"><strong>:fire: - 🔥</strong></li>
+						</ul>
+						<ul id="1a81ce28-956e-41a8-93e8-4437082d891f" class="bulleted-list">
+							<li style="list-style-type:disc"><strong>:heart: - ❤️</strong></li>
+						</ul>
+						<ul id="95cfa6b3-1c0c-49c7-9f3a-54cb4944f256" class="bulleted-list">
+							<li style="list-style-type:disc"><strong>:warning: - ⚠️</strong></li>
+						</ul>
+						<ul id="e2a8aa89-3091-4b48-a07f-a55a950560d2" class="bulleted-list">
+							<li style="list-style-type:disc"><strong>:exclamation: - ❗</strong></li>
+						</ul>
+						<ul id="ef7da85a-17c3-473e-8403-b10bdbb55d59" class="bulleted-list">
+							<li style="list-style-type:disc"><strong>:question: - ❓</strong></li>
+						</ul>
+						<ul id="e124ffe4-62a1-4f69-b7c6-bbc450459e7a" class="bulleted-list">
+							<li style="list-style-type:disc"><strong>:rocket: - 🚀</strong></li>
+						</ul>
+						<ul id="2ea75d6f-52de-4156-bfd6-29c965496e0b" class="bulleted-list">
+							<li style="list-style-type:disc"><strong>:tada: - 🎉</strong></li>
+						</ul>
+						<ul id="285f8adb-f83f-4944-84e7-b36ae7eabedf" class="bulleted-list">
+							<li style="list-style-type:disc"><strong>:bulb: - 💡</strong></li>
+						</ul>
+						<ul id="a8d79276-2df3-476b-a019-1beb8b5f73ea" class="bulleted-list">
+							<li style="list-style-type:disc"><strong>:memo: - 📝</strong></li>
+						</ul>
+						<ul id="7a35fa6b-6688-4e2d-8ecc-0305eeb4e118" class="bulleted-list">
+							<li style="list-style-type:disc"><strong>:mag: - 🔍</strong></li>
+						</ul>
+						<ul id="0113961c-c6b7-4c02-99ca-2eaf37eef4df" class="bulleted-list">
+							<li style="list-style-type:disc"><strong>:eyes: - 👀</strong></li>
+						</ul>
+					</div>
+				</details>
+				<h1 id="69a76f0e-3ccd-484e-a9f7-5df90727c472" class="">#🔑生成 ssh 密钥并绑定到GitHub</h1>
+				<pre id="04ed0bef-3c60-4bca-9bd3-14a014f99853"
+					class="code"><code>ssh-keygen -t rsa -C &quot;1714076628@qq.com&quot;</code></pre>
+				<h1 id="5e4ea543-5084-410c-beaa-f62974c497b2" class="">#🔑测试密钥是否绑定成功</h1>
+				<pre id="92501d79-630e-484c-8cad-179ee9420930" class="code"><code>ssh -T git@github.com</code></pre>
+				<h1 id="326d70d1-d898-48e3-8dbb-cbd48c1554f6" class="">#👤设置全局用户</h1>
+				<pre id="b0733204-dc02-433d-8d17-d77f45ba676d" class="code"><code>git config --global user.name &quot;HumanMus1c&quot;
+git config --global user.email &quot;1714076628@qq.com&quot;</code></pre>
+				<p id="6365a922-9dc4-4e57-b31d-5b3c5a1e9d74" class="">
+					<a href="mailto:git@github.com">git@github.com</a>:HumanMus1c/HumanMus1c.github.io.git
+					<a
+						href="https://github.com/HumanMus1c/HumanMus1c.github.io.git">https://github.com/HumanMus1c/HumanMus1c.github.io.git</a>
+				</p>
+				<p id="c944a0e3-470d-42dc-92f8-20898ade05da" class="">
+				</p>
+				<h1 id="ded22e8e-2e25-4892-93a1-dc1df22633c5" class="">#🔲安装hexo博客框架</h1>
+				<pre id="220c10ba-32fe-47d6-99da-520ed7490349" class="code"><code>npm install -g hexo-cli</code></pre>
+				<h2 id="3cb18d83-401e-4b76-89f0-4f4ec0bdbe61" class="">#初始化博客</h2>
+				<pre id="0ee4fb14-ced4-4a00-9aae-0a19a0d2a4ad" class="code"><code>npx hexo init</code></pre>
+				<h1 id="02f76b63-a054-45d6-98dd-3d0883424043" class="">#🔳安装Next主题(主题文件放置到theme文件夹下)</h1>
+				<pre id="cec9eed0-192d-4375-999a-eb893e5a4988"
+					class="code"><code>npm install hexo-theme-next</code></pre>
+				<p id="553ee118-bbad-411b-b5de-6250f6436e7c" class="">
+				</p>
+				<h2 id="cf8fea38-d23c-4a90-b218-690b0c31c193" class="">#本地预览网站步骤</h2>
+				<h3 id="a822e82c-5b78-4fd6-bf05-0756403a5178" class="">#每次修改文件都要重新生成博客页面</h3>
+				<pre id="f41bdb0e-3043-4241-909a-3ec7b19d2a30" class="code"><code>hexo c</code></pre>
+				<pre id="b2eeccca-2406-4690-ade5-a02c47cb4f44" class="code"><code>hexo g</code></pre>
+				<pre id="a1746b1a-9e31-42e9-930f-a6ce22dd0524" class="code"><code>hexo s</code></pre>
+				<p id="a3ea25dd-1b0c-4847-ad35-5a0ed3e1b3b7" class="">
+				</p>
+				<h1 id="39681f02-6dc1-4866-a2bd-962e58cf914e" class="">#📝设置主题并引用theme config配置文件</h1>
+				<pre id="51e534c5-7054-43e4-8046-07d19299c286" class="code"><code>theme: next</code></pre>
+				<blockquote id="9dc41406-afa9-4aab-b521-d541c7bc985b" class="">
+					theme配置信息next要和根目录下themes文件夹中放置的子主题文件夹名一致，才会读取主题文件以及配置信息。</blockquote>
+				<figure id="339f80d6-b9a5-46ac-813a-b0c858d36737" class="image" style="text-align:left"><a
+						href="%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled.png"><img
+							style="width:332px"
+							src="%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled.png" /></a>
+				</figure>
+				<figure id="83d7f0e2-18ee-4414-819d-2f3aae61954d" class="image" style="text-align:left"><a
+						href="%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%201.png"><img
+							style="width:680px"
+							src="%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%201.png" /></a>
+				</figure>
+				<p id="18e6a939-1daa-477a-a873-949ac6cd986f" class="">
+				</p>
+				<h1 id="a6d173fd-fd55-468b-afa5-5eb043376094" class="">#🚀配置部署信息</h1>
+				<h2 id="6e77129e-5f2d-49c6-82e7-52cb31fa0288" class="">github仓库名格式：&lt;github ID&gt;.github.io</h2>
+				<h3 id="1edb2684-4bd6-4dcc-8626-e004fae93be1" class="">仓库设置修改：🔧</h3>
+				<p id="c71d1ca8-d880-4327-ace8-6ee124dd5049" class="">1.将默认分支改为:main🔧</p>
+				<figure id="aff6eaaa-da95-4b22-85f0-1127cafff0fd" class="image"><a
+						href="%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%202.png"><img
+							style="width:1246px"
+							src="%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%202.png" /></a>
+					<figcaption>github仓库设置修改：</figcaption>
+				</figure>
+				<p id="4390b1e6-396e-4934-a0b4-e9eded2a54e2" class="">
+				</p>
+				<p id="66ee139f-09e7-415e-b651-f3bcf8a2c2f7" class="">2.github-settings-pages修改🔧</p>
+				<p id="88d0c78a-c760-4600-bbd9-df2b3941160a" class="">
+				</p>
+				<figure id="6a555acc-2ed1-4f8e-accd-1748f3feb50a" class="image"><a
+						href="%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%203.png"><img
+							style="width:1235px"
+							src="%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%203.png" /></a>
+				</figure>
+				<p id="deda5345-3a2c-43ac-af8f-f787fc5a8a71" class="">
+				</p>
+				<h2 id="efd8b143-1588-44c6-8d7a-445c60052c3e" class="">#根目录 _config文件设置github部署配置信息</h2>
+				<pre id="3c6ee1a8-d694-4aae-84e7-c52286389092" class="code code-wrap"><code>deploy:
+type: git
+repo: git@github.com:HumanMus1c/HumanMus1c.github.io.git
+branch: gh-pages</code></pre>
+				<p id="7590b422-eb05-4da4-b300-a420decd40d9" class="">
+				</p>
+				<h1 id="7c56ce50-ff69-462d-ac3e-1b5f94c970ad" class="">#📄网页内容</h1>
+				<p id="44c1c6d2-ddd8-48e4-82e1-0b9310fe9a45" class="">#将需要生成的网页内容以.md格式放置在/source/_posts目录下</p>
+				<p id="714afbce-16aa-4e9a-aa74-717fc95e9191" class="">🔔文件开头需要按格式填写标题🔔</p>
+				<p id="62635aca-e63b-456e-9f24-e1564806e4e7" class="">⚠️否则该文章将以“未命名”为标题⚠️</p>
+				<pre id="a3bfa9b1-35f9-4e8b-a811-399e2f0f3ba6" class="code code-wrap"><code>---
+title: Github网站笔记
+---</code></pre>
+			</div>
+		</article>
+	</body>
+</html>
