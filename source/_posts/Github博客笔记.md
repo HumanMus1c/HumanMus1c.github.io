@@ -5,44 +5,44 @@ tags:
   - 博客
 ---
 
+[![Logo](/images/Logo.png "Blog")](https://github.com/HumanMus1c)
+
 # #🔑生成 ssh 密钥并绑定到GitHub
 
 ```bash
-**ssh-keygen -t rsa -C "[1714076628@qq.com](mailto:1714076628@qq.com)"**
+	ssh-keygen -t rsa -C "123456789@xxx.com"
 ```
 
 # #🔑测试密钥是否绑定成功
 
 ```bash
-**ssh -T [git@github.com](mailto:git@github.com)**
+	ssh -T git@github.com
 ```
 
 # #👤设置全局用户
 
 ```bash
-**git config --global [user.name](http://user.name/) "HumanMus1c"
-git config --global user.email "[1714076628@qq.com](mailto:1714076628@qq.com)"**
+	git config --global user.name "HumanMus1c"
+	git config --global user.email "123456789@xxx.com"
 ```
 
-[git@github.com](mailto:git@github.com):HumanMus1c/HumanMus1c.github.io.git
-[https://github.com/HumanMus1c/HumanMus1c.github.io.git](https://github.com/HumanMus1c/HumanMus1c.github.io.git)
 
 # #🔲安装hexo博客框架
 
 ```bash
-**npm install -g hexo-cli**
+	npm install -g hexo-cli
 ```
 
 ## #初始化博客
 
 ```bash
-**npx hexo init**
+	npx hexo init
 ```
 
 # #🔳安装Next主题(主题文件放置到theme文件夹下)
 
 ```bash
-**npm install hexo-theme-next**
+	npm install hexo-theme-next
 ```
 
 ## #本地预览网站步骤
@@ -50,15 +50,15 @@ git config --global user.email "[1714076628@qq.com](mailto:1714076628@qq.com)"**
 ### #每次修改文件都要重新生成博客页面
 
 ```bash
-**hexo c**
+	hexo c
 ```
 
 ```bash
-**hexo g**
+	hexo g
 ```
 
 ```bash
-**hexo s**
+	hexo s
 ```
 
 # #📝设置主题并引用theme config配置文件
@@ -72,8 +72,9 @@ git config --global user.email "[1714076628@qq.com](mailto:1714076628@qq.com)"**
 ```
 
 > theme配置信息next要和根目录下themes文件夹中放置的子主题文件夹名一致，才会读取主题文件以及配置信息。
-![代码](/images/Untitled.png)
-![文件夹](/images/Untitled1.png)
+> 
+![代码](/images/Untitled.png "代码")
+![文件夹](/images/Untitled1.png "文件夹")
 
 # #🚀配置部署信息
 
@@ -86,11 +87,11 @@ git config --global user.email "[1714076628@qq.com](mailto:1714076628@qq.com)"**
 
 
 ### 🔧修改默认branch为:main
-![仓库Settings修改branch：](/images/Untitled2.png)
+![仓库Settings修改branch](/images/Untitled2.png "仓库Settings修改branch")
 
 
 ### 🔧修改Pages为gh-pages_/root
-![仓库Settings修改pages：](/images/Untitled3.png)
+![仓库Settings修改pages](/images/Untitled3.png "仓库Settings修改pages_Build and Deployment")
 
 
 # #根目录 _config文件设置github部署配置信息
@@ -100,7 +101,7 @@ git config --global user.email "[1714076628@qq.com](mailto:1714076628@qq.com)"**
 	## Docs: https://hexo.io/docs/one-command-deployment
 	deploy:
 	type: git
-	repo: [git@github.com](mailto:git@github.com):HumanMus1c/HumanMus1c.github.io.git
+	repo: git@github.com:HumanMus1c/HumanMus1c.github.io.git
 	branch: gh-pages
 ```
 
@@ -117,3 +118,8 @@ git config --global user.email "[1714076628@qq.com](mailto:1714076628@qq.com)"**
 title: Github网站笔记
 ---
 ```
+
+链接图片
+给图片增加链接，请将图像的Markdown 括在方括号中，然后将链接添加在圆括号中。
+
+[![图片](/images/desktop-202303200000.jpg "landscape")](https://markdown.com.cn/basic-syntax/images.html)
