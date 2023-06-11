@@ -131,7 +131,7 @@ sidebar:
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  totally remove sidebar including sidebar toggle.
-  display: always
+  display: post
 
   # Sidebar padding in pixels.
   padding: 18
@@ -141,7 +141,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: /images/Logo.png
+  url: /images/Logo.png #/images/avatar.gif
   # If true, the avatar will be displayed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
@@ -186,7 +186,7 @@ toc:
   # Automatically add list number to toc.
   number: true
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: true
+  wrap: false
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: false
   # Maximum heading depth of generated toc.
@@ -260,7 +260,7 @@ symbols_count_time:
   item_text_total: true
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Donate (Sponsor) settings
 # Front-matter variable (nonsupport animation).
@@ -371,12 +371,12 @@ codeblock:
   copy_button:
     enable: true
     # Available values: default | flat | mac
-    style:
+    style: default
 
 back2top:
   enable: true
   # Back to top in sidebar.
-  sidebar: false
+  sidebar: true
   # Scroll percent label in b2t button.
   scrollpercent: true
 
@@ -432,7 +432,7 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: PingFang SC
+    family: Lato
     size:
 
   # Font settings for site title (.site-title).
@@ -532,6 +532,9 @@ mermaid:
     light: default
     dark: dark
 
+# WaveDrom tag
+wavedrom:
+  enable: true
 
 # ---------------------------------------------------------------
 # Third Party Plugins & Services Settings
