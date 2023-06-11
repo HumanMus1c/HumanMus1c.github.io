@@ -72,8 +72,8 @@ git config --global user.email "[1714076628@qq.com](mailto:1714076628@qq.com)"**
 ```
 
 > theme配置信息next要和根目录下themes文件夹中放置的子主题文件夹名一致，才会读取主题文件以及配置信息。
-![代码](/source/images/Untitled.png)
-![文件夹](/source/images/Untitled1.png)
+![代码](/images/Untitled.png)
+![文件夹](/images/Untitled1.png)
 
 # #🚀配置部署信息
 
@@ -86,11 +86,11 @@ git config --global user.email "[1714076628@qq.com](mailto:1714076628@qq.com)"**
 
 
 ### 🔧修改默认branch为:main
-![仓库Settings修改branch：](/source/images/Untitled2.png)
+![仓库Settings修改branch：](/images/Untitled2.png)
 
 
 ### 🔧修改Pages为gh-pages_/root
-![仓库Settings修改pages：](/source/images/Untitled3.png)
+![仓库Settings修改pages：](/images/Untitled3.png)
 
 
 # #根目录 _config文件设置github部署配置信息
