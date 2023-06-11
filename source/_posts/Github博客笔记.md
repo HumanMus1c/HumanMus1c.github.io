@@ -64,43 +64,44 @@ git config --global user.email "[1714076628@qq.com](mailto:1714076628@qq.com)"**
 # #📝设置主题并引用theme config配置文件
 
 ```markdown
-theme: next
+	# Extensions
+	## Plugins: https://hexo.io/plugins/
+	## Themes: https://hexo.io/themes/
+	theme: next
+	#themes/next/_config.yml
 ```
 
 > theme配置信息next要和根目录下themes文件夹中放置的子主题文件夹名一致，才会读取主题文件以及配置信息。
-> 
-
-![Untitled](%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%20.png)
-
-![Untitled](%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%201.png)
+![代码](/source/images/Untitled.png)
+![文件夹](/source/images/Untitled1.png)
 
 # #🚀配置部署信息
 
-## github仓库名格式：<github ID>.github.io
 
-### 仓库设置修改：🔧
+## 🔧仓库设置修改：
 
-1.将默认分支改为:main🔧
 
-<<<<<<< HEAD
-![github仓库设置修改：](%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%202.png)
-=======
-![github仓库设置修改：](%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%202.png)
->>>>>>> parent of af4b48c (change logo)
+### 🔧Github仓库名格式：&lt;github ID&lt;.github.io
 
-github仓库设置修改：
 
-2.github-settings-pages修改🔧
 
-![Untitled](/imagesUntitled3.png)
+### 🔧修改默认branch为:main
+![仓库Settings修改branch：](/source/images/Untitled2.png)
 
-## #根目录 _config文件设置github部署配置信息
+
+### 🔧修改Pages为gh-pages_/root
+![仓库Settings修改pages：](/source/images/Untitled3.png)
+
+
+# #根目录 _config文件设置github部署配置信息
 
 ```markdown
-deploy:
-type: git
-repo: [git@github.com](mailto:git@github.com):HumanMus1c/HumanMus1c.github.io.git
-branch: gh-pages
+	# Deployment
+	## Docs: https://hexo.io/docs/one-command-deployment
+	deploy:
+	type: git
+	repo: [git@github.com](mailto:git@github.com):HumanMus1c/HumanMus1c.github.io.git
+	branch: gh-pages
 ```
 
 # #📄网页内容
