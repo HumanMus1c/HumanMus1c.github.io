@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"humanmus1c.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.17.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"humanmus1c.github.io","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.17.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="记录一下">
 <meta property="og:type" content="website">
@@ -200,7 +200,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-06-11 10:48:57" itemprop="dateModified" datetime="2023-06-11T10:48:57+06:00">2023-06-11</time>
+      <time title="修改时间：2023-06-11 19:04:42" itemprop="dateModified" datetime="2023-06-11T19:04:42+06:00">2023-06-11</time>
     </span>
 
   
@@ -213,64 +213,57 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="🔑生成-ssh-密钥并绑定到GitHub"><a href="#🔑生成-ssh-密钥并绑定到GitHub" class="headerlink" title="#🔑生成 ssh 密钥并绑定到GitHub"></a>#🔑生成 ssh 密钥并绑定到GitHub</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">**ssh-keygen <span class="token parameter variable">-t</span> rsa <span class="token parameter variable">-C</span> <span class="token string">"[1714076628@qq.com](mailto:1714076628@qq.com)"</span>**<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+          <img src="/images/desktop-202303200000.jpg" width="100%">
 
-<h1 id="🔑测试密钥是否绑定成功"><a href="#🔑测试密钥是否绑定成功" class="headerlink" title="#🔑测试密钥是否绑定成功"></a>#🔑测试密钥是否绑定成功</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">**ssh <span class="token parameter variable">-T</span> <span class="token punctuation">[</span>git@github.com<span class="token punctuation">]</span><span class="token punctuation">(</span>mailto:git@github.com<span class="token punctuation">)</span>**<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="🔑生成-ssh-密钥并绑定到GitHub"><a href="#🔑生成-ssh-密钥并绑定到GitHub" class="headerlink" title="#🔑生成 ssh 密钥并绑定到GitHub"></a>#🔑生成 ssh 密钥并绑定到GitHub</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh-keygen -t rsa -C &quot;123456789@xxx.com&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h1 id="👤设置全局用户"><a href="#👤设置全局用户" class="headerlink" title="#👤设置全局用户"></a>#👤设置全局用户</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">**git config <span class="token parameter variable">--global</span> <span class="token punctuation">[</span>user.name<span class="token punctuation">]</span><span class="token punctuation">(</span>http://user.name/<span class="token punctuation">)</span> <span class="token string">"HumanMus1c"</span>
-<span class="token function">git</span> config <span class="token parameter variable">--global</span> user.email <span class="token string">"[1714076628@qq.com](mailto:1714076628@qq.com)"</span>**<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h1 id="🔑测试密钥是否绑定成功"><a href="#🔑测试密钥是否绑定成功" class="headerlink" title="#🔑测试密钥是否绑定成功"></a>#🔑测试密钥是否绑定成功</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh -T git@github.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p><a href="mailto:git@github.com">git@github.com</a>:HumanMus1c&#x2F;HumanMus1c.github.io.git<br><a target="_blank" rel="noopener" href="https://github.com/HumanMus1c/HumanMus1c.github.io.git">https://github.com/HumanMus1c/HumanMus1c.github.io.git</a></p>
-<h1 id="🔲安装hexo博客框架"><a href="#🔲安装hexo博客框架" class="headerlink" title="#🔲安装hexo博客框架"></a>#🔲安装hexo博客框架</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">**npm <span class="token function">install</span> <span class="token parameter variable">-g</span> hexo-cli**<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="👤设置全局用户"><a href="#👤设置全局用户" class="headerlink" title="#👤设置全局用户"></a>#👤设置全局用户</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">git config --global user.name &quot;HumanMus1c&quot;
+git config --global user.email &quot;123456789@xxx.com&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h2 id="初始化博客"><a href="#初始化博客" class="headerlink" title="#初始化博客"></a>#初始化博客</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">**npx hexo init**<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h1 id="🔳安装Next主题-主题文件放置到theme文件夹下"><a href="#🔳安装Next主题-主题文件放置到theme文件夹下" class="headerlink" title="#🔳安装Next主题(主题文件放置到theme文件夹下)"></a>#🔳安装Next主题(主题文件放置到theme文件夹下)</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">**npm <span class="token function">install</span> hexo-theme-next**<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="🔲安装hexo博客框架"><a href="#🔲安装hexo博客框架" class="headerlink" title="#🔲安装hexo博客框架"></a>#🔲安装hexo博客框架</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm install -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h2 id="本地预览网站步骤"><a href="#本地预览网站步骤" class="headerlink" title="#本地预览网站步骤"></a>#本地预览网站步骤</h2><h3 id="每次修改文件都要重新生成博客页面"><a href="#每次修改文件都要重新生成博客页面" class="headerlink" title="#每次修改文件都要重新生成博客页面"></a>#每次修改文件都要重新生成博客页面</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">**hexo c**<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="初始化博客"><a href="#初始化博客" class="headerlink" title="#初始化博客"></a>#初始化博客</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npx hexo init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">**hexo g**<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h1 id="🔳安装Next主题-主题文件放置到theme文件夹下"><a href="#🔳安装Next主题-主题文件放置到theme文件夹下" class="headerlink" title="#🔳安装Next主题(主题文件放置到theme文件夹下)"></a>#🔳安装Next主题(主题文件放置到theme文件夹下)</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm install hexo-theme-next<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">**hexo s**<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="本地预览网站步骤"><a href="#本地预览网站步骤" class="headerlink" title="#本地预览网站步骤"></a>#本地预览网站步骤</h2><h3 id="每次修改文件都要重新生成博客页面"><a href="#每次修改文件都要重新生成博客页面" class="headerlink" title="#每次修改文件都要重新生成博客页面"></a>#每次修改文件都要重新生成博客页面</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h1 id="📝设置主题并引用theme-config配置文件"><a href="#📝设置主题并引用theme-config配置文件" class="headerlink" title="#📝设置主题并引用theme config配置文件"></a>#📝设置主题并引用theme config配置文件</h1><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">theme: next<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h1 id="📝设置主题并引用theme-config配置文件"><a href="#📝设置主题并引用theme-config配置文件" class="headerlink" title="#📝设置主题并引用theme config配置文件"></a>#📝设置主题并引用theme config配置文件</h1><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"># Extensions
+## Plugins: https:&#x2F;&#x2F;hexo.io&#x2F;plugins&#x2F;
+## Themes: https:&#x2F;&#x2F;hexo.io&#x2F;themes&#x2F;
+theme: next
+#themes&#x2F;next&#x2F;_config.yml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
 <p>theme配置信息next要和根目录下themes文件夹中放置的子主题文件夹名一致，才会读取主题文件以及配置信息。</p>
 </blockquote>
-<p><img src="/%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%20.png" alt="Untitled"></p>
-<p><img src="/%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%201.png" alt="Untitled"></p>
-<h1 id="🚀配置部署信息"><a href="#🚀配置部署信息" class="headerlink" title="#🚀配置部署信息"></a>#🚀配置部署信息</h1><h2 id="github仓库名格式：-github-io"><a href="#github仓库名格式：-github-io" class="headerlink" title="github仓库名格式：.github.io"></a>github仓库名格式：<github ID>.github.io</h2><h3 id="仓库设置修改：🔧"><a href="#仓库设置修改：🔧" class="headerlink" title="仓库设置修改：🔧"></a>仓库设置修改：🔧</h3><p>1.将默认分支改为:main🔧</p>
-<h1 id="lt-lt-lt-lt-lt-lt-lt-HEAD"><a href="#lt-lt-lt-lt-lt-lt-lt-HEAD" class="headerlink" title="&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD"></a>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br><img src="/%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%202.png" alt="github仓库设置修改："></h1><p><img src="/%F0%9F%8E%89Github%E7%BD%91%E7%AB%99%E7%AC%94%E8%AE%B0%F0%9F%8E%89%209952ffba57d545088f7cdc3da240431a/Untitled%202.png" alt="github仓库设置修改："></p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>parent of af4b48c (change logo)</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<p>github仓库设置修改：</p>
-<p>2.github-settings-pages修改🔧</p>
-<p><img src="/imagesUntitled3.png" alt="Untitled"></p>
-<h2 id="根目录-config文件设置github部署配置信息"><a href="#根目录-config文件设置github部署配置信息" class="headerlink" title="#根目录 _config文件设置github部署配置信息"></a>#根目录 _config文件设置github部署配置信息</h2><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">deploy:
+<p><img src="/images/Untitled.png" alt="代码" title="代码"><br><img src="/images/Untitled1.png" alt="文件夹" title="文件夹"></p>
+<h1 id="🚀配置部署信息"><a href="#🚀配置部署信息" class="headerlink" title="#🚀配置部署信息"></a>#🚀配置部署信息</h1><h2 id="🔧仓库设置修改："><a href="#🔧仓库设置修改：" class="headerlink" title="🔧仓库设置修改："></a>🔧仓库设置修改：</h2><h3 id="🔧Github仓库名格式：-lt-github-ID-lt-github-io"><a href="#🔧Github仓库名格式：-lt-github-ID-lt-github-io" class="headerlink" title="🔧Github仓库名格式：&lt;github ID&lt;.github.io"></a>🔧Github仓库名格式：&lt;github ID&lt;.github.io</h3><h3 id="🔧修改默认branch为-main"><a href="#🔧修改默认branch为-main" class="headerlink" title="🔧修改默认branch为:main"></a>🔧修改默认branch为:main</h3><p><img src="/images/Untitled2.png" alt="仓库Settings修改branch" title="仓库Settings修改branch"></p>
+<h3 id="🔧修改Pages为gh-pages-x2F-root"><a href="#🔧修改Pages为gh-pages-x2F-root" class="headerlink" title="🔧修改Pages为gh-pages_&#x2F;root"></a>🔧修改Pages为gh-pages_&#x2F;root</h3><p><img src="/images/Untitled3.png" alt="仓库Settings修改pages" title="仓库Settings修改pages_Build and Deployment"></p>
+<h1 id="根目录-config文件设置github部署配置信息"><a href="#根目录-config文件设置github部署配置信息" class="headerlink" title="#根目录 _config文件设置github部署配置信息"></a>#根目录 _config文件设置github部署配置信息</h1><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"># Deployment
+## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;one-command-deployment
+deploy:
 type: git
-repo: <span class="token url">[<span class="token content">git@github.com</span>](<span class="token url">mailto:git@github.com</span>)</span>:HumanMus1c/HumanMus1c.github.io.git
-branch: gh-pages<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+repo: git@github.com:HumanMus1c&#x2F;HumanMus1c.github.io.git
+branch: gh-pages<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h1 id="📄网页内容"><a href="#📄网页内容" class="headerlink" title="#📄网页内容"></a>#📄网页内容</h1><p>#将需要生成的网页内容以.md格式放置在&#x2F;source&#x2F;_posts目录下</p>
 <p>🔔文件开头需要按格式填写标题🔔</p>
 <p>⚠️否则该文章将以“未命名”为标题⚠️</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
-<span class="token front-matter yaml language-yaml">title: Github网站笔记</span>
-<span class="token punctuation">---</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">---
+title: Github网站笔记
+---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>链接图片<br>给图片增加链接，请将图像的Markdown 括在方括号中，然后将链接添加在圆括号中。</p>
+<p><a href="#"><img src="/images/hexo-512x512.svg" alt="Github" title="Hexo"></a><br><a href="#"><img src="/images/next.png" alt="Github" title="Next"></a></p>
+
       
     </div>
 
@@ -304,7 +297,7 @@ branch: gh-pages<span aria-hidden="true" class="line-numbers-rows"><span></span>
   </span>
   <span class="author" itemprop="copyrightHolder">Human</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
   </div>
 
     </div>

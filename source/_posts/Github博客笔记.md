@@ -5,7 +5,7 @@ tags:
   - 博客
 ---
 
-[![Logo](/images/Logo.png "Blog")](https://github.com/HumanMus1c)
+<img src="/images/desktop-202303200000.jpg" width="100%">
 
 # #🔑生成 ssh 密钥并绑定到GitHub
 
@@ -122,4 +122,6 @@ title: Github网站笔记
 链接图片
 给图片增加链接，请将图像的Markdown 括在方括号中，然后将链接添加在圆括号中。
 
-[![图片](/images/desktop-202303200000.jpg "landscape")](https://markdown.com.cn/basic-syntax/images.html)
+[![Github](/images/hexo-512x512.svg "Hexo")](#)
+[![Github](/images/next.png "Next")](#)
+[![Github](/images/Logo.png "Logo")](#)
