@@ -2659,7 +2659,7 @@ header.header {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #c3be58;
+  background: #001db6;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
